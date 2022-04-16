@@ -43,15 +43,7 @@ p{
 }
 // CARD PRIMARY
 .card{
-    margin-block: 2rem;
-    cursor: pointer;
-    background-color: $Dark-Desaturated-Blue;
-    padding: 2rem;
     text-align: center;
-    width: 340px;
-    border-radius: 12px;
-    margin-inline: auto;
-    transition: 0.4s linear;
     &__title{
         font-weight:600;
     }
@@ -122,9 +114,75 @@ p{
 .changingHeadingColor{
     color: #1e212a;
 }
-.cards{
-    background-color: #f0f3fa ;
+.magic{
+    background-color: #f0f3fa !important;
     &:hover{
-        background-color: #ebebeb;
+        background-color: #ebebeb !important;
     }
+}
+// footer
+
+.cardSt{
+    display: flex;
+    justify-content: space-between;
+    &__reaction{
+    h1{
+        margin-top: 2rem;
+    }
+    }
+    &__socialMedia{
+        padding-top: 0.7rem;
+           .svg{
+            position: relative;
+            display: flex;
+            top: 3rem;
+            left: -0.7rem;
+            img{ 
+                height: 6px;
+                width: 8px;
+            }
+            h6{
+                margin-left: 5px;
+                color: $Green;
+                position: inherit;
+                top: -0.3rem;
+            }
+           }
+    }
+    @include desktop{
+        width: 90%;
+    }
+    &:hover{
+        background-color: #353b51;
+       
+    }
+}
+.red{
+    color: $Red !important;
+}
+.items{
+    margin-block: 1rem;
+    cursor: pointer;
+    background-color: $Dark-Desaturated-Blue;
+    padding: 2rem;
+    width: 340px;
+    border-radius: 12px;
+    margin-inline: auto;
+    // transition: 0.25s linear;
+    p{
+        font-weight: 600;
+    }
+    @include desktop{
+        width: 90%;
+    }
+    &:hover{
+        background-color: #353b51;
+       
+    }
+}
+footer{
+    h2{
+        margin-left: 2rem;
+    }
+    
 }

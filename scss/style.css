@@ -100,16 +100,7 @@ p {
 }
 
 .card {
-  margin-block: 2rem;
-  cursor: pointer;
-  background-color: #252a41;
-  padding: 2rem;
   text-align: center;
-  width: 340px;
-  border-radius: 12px;
-  margin-inline: auto;
-  -webkit-transition: 0.4s linear;
-  transition: 0.4s linear;
 }
 
 .card__title {
@@ -200,11 +191,91 @@ p {
   color: #1e212a;
 }
 
-.cards {
-  background-color: #f0f3fa;
+.magic {
+  background-color: #f0f3fa !important;
 }
 
-.cards:hover {
-  background-color: #ebebeb;
+.magic:hover {
+  background-color: #ebebeb !important;
+}
+
+.cardSt {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.cardSt__reaction h1 {
+  margin-top: 2rem;
+}
+
+.cardSt__socialMedia {
+  padding-top: 0.7rem;
+}
+
+.cardSt__socialMedia .svg {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  top: 3rem;
+  left: -0.7rem;
+}
+
+.cardSt__socialMedia .svg img {
+  height: 6px;
+  width: 8px;
+}
+
+.cardSt__socialMedia .svg h6 {
+  margin-left: 5px;
+  color: #1db489;
+  position: inherit;
+  top: -0.3rem;
+}
+
+@media (min-width: 960px) {
+  .cardSt {
+    width: 90%;
+  }
+}
+
+.cardSt:hover {
+  background-color: #353b51;
+}
+
+.red {
+  color: #dc414c !important;
+}
+
+.items {
+  margin-block: 1rem;
+  cursor: pointer;
+  background-color: #252a41;
+  padding: 2rem;
+  width: 340px;
+  border-radius: 12px;
+  margin-inline: auto;
+}
+
+.items p {
+  font-weight: 600;
+}
+
+@media (min-width: 960px) {
+  .items {
+    width: 90%;
+  }
+}
+
+.items:hover {
+  background-color: #353b51;
+}
+
+footer h2 {
+  margin-left: 2rem;
 }
 /*# sourceMappingURL=style.css.map */
